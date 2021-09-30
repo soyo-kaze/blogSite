@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Blog from "./Blog";
 import axios from "axios";
+import FormData from "./FormData";
 const app = axios.create({
   baseURL: "http://localhost:8080",
 });
@@ -57,7 +58,7 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      <div className="flex  justify-center items-center flex-col">
         <span className="p-10 w-full flex justify-center items-center">
           <p className="font-semibold text-6xl">Welcome to my blogSite</p>
         </span>
@@ -72,6 +73,11 @@ const Home = () => {
             "Loding..."
           )}
         </span>
+        <Link to="/form">
+          <button className="mt-4 p-2 bg-green-500 rounded-md hover:bg-green-600 text-white font-semibold ">
+            Add new blog
+          </button>
+        </Link>
       </div>
     </>
   );
@@ -82,6 +88,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/blog/:id" component={Blog} />
+        <Route path="/form" component={FormData} />
         <Route exact path="/">
           <Home />
         </Route>

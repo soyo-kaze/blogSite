@@ -21,11 +21,13 @@ app.get("/data", async (req, res) => {
 
 app.post("/add", (req, res) => {
   const input = req.body;
+  const inData = {};
+  inData[`${input.id}`] = { ...input };
   if (Object.keys(input).length) {
     readFile("./data.json", "utf8")
       .then((text) => {
         const data = JSON.parse(text);
-        const newData = [...data.data, input];
+        const newData = { ...data.data, ...inData };
         const finalData = { data: newData };
         writeFile("./data.json", JSON.stringify(finalData))
           .then(() => res.send("Successfully added!!"))
