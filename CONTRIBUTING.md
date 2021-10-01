@@ -6,6 +6,9 @@ This repo is only to give you an experience of how to contribute and how meaning
 
 ---
 
+**Step1:** Create a new Barnch with your name and do the needful
+
+**Step2:**
 Y'all will be adding data to [./backend/data.json](./backend/data.json) file. The following is the template JSON structure.
 
 ```JSON
