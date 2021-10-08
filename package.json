@@ -24,7 +24,6 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://soyo-kaze.github.io/blogSite",
   "eslintConfig": {
     "extends": [
       "react-app",
