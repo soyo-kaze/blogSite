@@ -6,7 +6,7 @@ import Blog from "./Blog";
 import axios from "axios";
 import FormData from "./FormData";
 const app = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://reactbackendsoyokaze.herokuapp.com/",
 });
 
 // app
@@ -52,6 +52,23 @@ const handleApi = (action1, action2) => {
 const Home = () => {
   const [blogData, setData] = useState([]);
   const [keys, setKeys] = useState([]);
+  const [newKey, setNewKey] = useState([]);
+  useEffect(() => {
+    const keyNewArr = [[]];
+    const keyLen = keys.length;
+    let key = 0;
+    for (let i = 1; i <= keyLen; i++) {
+      if (i % 3) {
+        keyNewArr[key].push(keys[i - 1]);
+      } else {
+        keyNewArr[key].push(keys[i - 1]);
+        keyNewArr.push([]);
+        key++;
+      }
+    }
+    setNewKey(keyNewArr);
+    console.log("hello");
+  }, [keys]);
   useEffect(() => {
     handleApi(setData, setKeys);
   }, []);
@@ -64,9 +81,13 @@ const Home = () => {
         </span>
         <span className="flex  justify-center items-center p-10">
           {blogData.length !== 0 ? (
-            <span className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-x-4 md:space-y-0">
-              {keys.map((data, x) => (
-                <Card {...blogData[data]} key={x} />
+            <span className="flex flex-col items-center justify-center space-y-4 md:space-x-4 md:space-y-6">
+              {newKey.map((a) => (
+                <span className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-x-4 md:space-y-0">
+                  {a.map((data, x) => (
+                    <Card {...blogData[data]} key={x} />
+                  ))}
+                </span>
               ))}
             </span>
           ) : (

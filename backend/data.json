@@ -37,7 +37,7 @@
       "thePara": "Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects. You can do this in a variety of ways"
     },
     "GenxTheGamer": {
-      "imgUrl": "https://static.wikia.nocookie.net/jjba/images/0/01/JotaroProfile.png/revision/latest/scale-to-width-down/270?cb=20191125014406",
+      "imgUrl": "https://media1.tenor.com/images/f1ae7c30aa7f743925849f254d6e1f9a/tenor.gif",
       "title": "Jotaro Kujo",
       "author": "Genx",
       "id": "GenxTheGamer",
@@ -45,5 +45,14 @@
       "smallDes": "Jotaro Kujo is a fictional character in the Japanese manga series JoJo's Bizarre Adventure, written and illustrated by Hirohiko Araki. ",
       "thePara": "Jotaro Kujo (空条 承太郎 Kūjō Jōtarō) is the protagonist of Part 3 and also appears in Parts 4-6. Jotaro is the third and most recurring JoJo of the JoJo's Bizarre Adventure series. Jotaro is a delinquent who lives an ordinary life until the Joestar Family's old enemy, DIO, returns. Jotaro travels to Egypt in order to save his mother and stop the Vampire once and for all. Wielding the incredibly powerful Star Platinum, Jotaro is the first JoJo introduced with a Stand, and is among the most well-known characters of the series. "
     },
+    "Dio_Brando": {
+      "imgUrl": "https://gifimage.net/wp-content/uploads/2017/12/jojo-dio-gif-11.gif",
+      "title": "Kon dio da",
+      "author": "Dio brando",
+      "id": "Dio_Brando",
+      "time": "",
+      "smallDes": "Dio Brando (ディオ・ブランドー Dio Burandō), known as DIO from Part 3 onwards, is the main antagonist of Part 1 and Part 3.",
+      "thePara": "Dio's most recognizable characteristics are his boundless ambition and his love of power. Abused by his father, being underpriviledged and having lived in the most miserable living conditions,[8] Dio set for himself the goal of becoming the richest, then the most powerful being on Earth. To do so, Dio used anything or anyone that he could in order to further his goals, disregarding any kind of morality that would restrain the range of actions available to him. Using either manipulation, seduction, or plain violence, Dio constantly sought to become more and more powerful. Dio enjoys being in a position of power[9][10] and has repeatedly stated how great he felt being in a dominating position. On the contrary, Dio never tolerated that someone could stand up to him or equal him in power, and was enraged and deeply disturbed at the thought several times. "
+    }
   }
 }

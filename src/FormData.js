@@ -53,6 +53,7 @@ const FormData = () => {
         <input
           type="url"
           value={data.imgUrl}
+          required
           onChange={(event) => {
             setData({ ...data, imgUrl: `${event.target.value}` });
           }}

@@ -1,7 +1,7 @@
 const express = require("express");
-require("dotenv").config();
+// require("dotenv").config();
 const app = express();
-const PORT = process.env.PORT_BACKEND || 8080;
+const PORT = process.env.PORT || 8080;
 const { readFile, writeFile } = require("fs").promises;
 
 app.use(express.json());
